@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5G4-Vm-ATp">
+                                <rect key="frame" x="87.5" y="243.5" width="200" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1001" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTV-FD-qDo" customClass="WXIrregularButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <state key="normal" image="leftUp"/>
+                                        <connections>
+                                            <action selector="btnClici:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Qh-5V-l93"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ObD-dy-lGo" customClass="WXIrregularButton">
+                                        <rect key="frame" x="100" y="100" width="100" height="100"/>
+                                        <state key="normal" image="rightDown"/>
+                                        <connections>
+                                            <action selector="btnClici:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mt1-Fx-jFY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1003" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyK-Q8-KMv" customClass="WXIrregularButton">
+                                        <rect key="frame" x="0.0" y="100" width="100" height="100"/>
+                                        <state key="normal" image="leftDown"/>
+                                        <connections>
+                                            <action selector="btnClici:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WLY-uZ-W8o"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1005" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYU-1b-U1x" customClass="WXIrregularButton">
+                                        <rect key="frame" x="60" y="60" width="80" height="80"/>
+                                        <state key="normal" image="center"/>
+                                        <connections>
+                                            <action selector="btnClici:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tGF-TN-32t"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64s-1b-hDJ" customClass="WXIrregularButton">
+                                        <rect key="frame" x="100" y="0.0" width="100" height="100"/>
+                                        <state key="normal" image="rightUp"/>
+                                        <connections>
+                                            <action selector="btnClici:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aWK-8h-zEQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.65457589289999996" green="0.70683593749999996" blue="0.79748883930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="64s-1b-hDJ" secondAttribute="trailing" id="2IC-uA-VAL"/>
+                                    <constraint firstItem="eyK-Q8-KMv" firstAttribute="top" secondItem="hTV-FD-qDo" secondAttribute="bottom" id="6YE-n7-6D8"/>
+                                    <constraint firstItem="hTV-FD-qDo" firstAttribute="height" secondItem="5G4-Vm-ATp" secondAttribute="height" multiplier="1/2" id="7hp-wy-o3b"/>
+                                    <constraint firstItem="64s-1b-hDJ" firstAttribute="width" secondItem="hTV-FD-qDo" secondAttribute="width" id="Fhz-rK-nvx"/>
+                                    <constraint firstAttribute="width" constant="200" id="Hio-ft-sea"/>
+                                    <constraint firstItem="hTV-FD-qDo" firstAttribute="top" secondItem="5G4-Vm-ATp" secondAttribute="top" id="Kdl-25-jn2"/>
+                                    <constraint firstItem="kYU-1b-U1x" firstAttribute="centerY" secondItem="5G4-Vm-ATp" secondAttribute="centerY" id="MRt-fj-sHD"/>
+                                    <constraint firstItem="kYU-1b-U1x" firstAttribute="centerX" secondItem="5G4-Vm-ATp" secondAttribute="centerX" id="QaO-SU-qhC"/>
+                                    <constraint firstItem="ObD-dy-lGo" firstAttribute="centerX" secondItem="64s-1b-hDJ" secondAttribute="centerX" id="UHs-dk-5rR"/>
+                                    <constraint firstItem="eyK-Q8-KMv" firstAttribute="centerX" secondItem="hTV-FD-qDo" secondAttribute="centerX" id="Vkh-4g-pUT"/>
+                                    <constraint firstItem="eyK-Q8-KMv" firstAttribute="width" secondItem="hTV-FD-qDo" secondAttribute="height" multiplier="1:1" id="WwL-IU-CzA"/>
+                                    <constraint firstItem="hTV-FD-qDo" firstAttribute="leading" secondItem="5G4-Vm-ATp" secondAttribute="leading" id="ZQM-in-8Dz"/>
+                                    <constraint firstItem="64s-1b-hDJ" firstAttribute="centerY" secondItem="hTV-FD-qDo" secondAttribute="centerY" id="dp7-tC-6bv"/>
+                                    <constraint firstItem="64s-1b-hDJ" firstAttribute="height" secondItem="hTV-FD-qDo" secondAttribute="height" id="erY-RY-f9C"/>
+                                    <constraint firstAttribute="height" constant="200" id="g7m-lv-d0W"/>
+                                    <constraint firstItem="hTV-FD-qDo" firstAttribute="width" secondItem="5G4-Vm-ATp" secondAttribute="width" multiplier="1/2" id="tQ9-9o-heP"/>
+                                    <constraint firstItem="ObD-dy-lGo" firstAttribute="top" secondItem="eyK-Q8-KMv" secondAttribute="top" id="tid-AF-4Im"/>
+                                    <constraint firstItem="ObD-dy-lGo" firstAttribute="width" secondItem="eyK-Q8-KMv" secondAttribute="height" multiplier="1:1" id="xN6-9D-9dw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5G4-Vm-ATp" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="L4h-z9-vNk"/>
+                            <constraint firstItem="5G4-Vm-ATp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hhU-xa-E0H"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="center" width="80" height="80"/>
+        <image name="leftDown" width="100" height="100"/>
+        <image name="leftUp" width="100" height="100"/>
+        <image name="rightDown" width="100" height="100"/>
+        <image name="rightUp" width="100" height="100"/>
+    </resources>
+</document>
